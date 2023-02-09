@@ -7,7 +7,7 @@ import requests
 import os
 
 # ebb: This variable stores the website address that you want to scrape.
-archive_url = "http://www.textfiles.com/drugs/"
+archive_url = "http://www.textfiles.com/food/"
 
 def get_tales():
     # create response object
@@ -36,7 +36,7 @@ def download_links(href):
 
     workingDir = os.getcwd()
     print("current working directory: " + workingDir)
-    fileDeposit = os.path.join(workingDir, 'drugs-text', file_name)
+    fileDeposit = os.path.join(workingDir, 'foodText', file_name)
     print(fileDeposit)
 
 
